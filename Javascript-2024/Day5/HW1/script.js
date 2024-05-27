@@ -5,7 +5,7 @@ function myFunction() {
 
   if (
     nicNo.length == 10 &&
-    nicNo.charAt(0) >= 0 &&
+    nicNo.substring(0, 9) >= 0 &&
     (nicNo.endsWith('x') || nicNo.endsWith('v'))
   ) {
     document.getElementById(

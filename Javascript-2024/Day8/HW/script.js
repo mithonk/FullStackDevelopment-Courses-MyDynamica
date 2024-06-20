@@ -3,7 +3,7 @@ document.getElementById('sub').addEventListener('click', () => sub());
 document.getElementById('mul').addEventListener('click', () => mul());
 document.getElementById('div').addEventListener('click', () => div());
 
-const add = () => {
+let add = () => {
   let num1 = document.getElementById('number1').value;
   let num2 = document.getElementById('number2').value;
   let output = Number(num1) + Number(num2);

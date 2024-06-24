@@ -5,7 +5,7 @@
 
 // console.log(arr);
 
-let arr = [20, 55.54, 'Nila', true];
+// let arr = [20, 55.54, 'Nila', true];
 
 // console.log(arr);
 // console.log(arr[0]);
@@ -41,3 +41,23 @@ let arr = [20, 55.54, 'Nila', true];
 // });
 
 // arr.forEach(item => console.log(`Item: ${item}`));
+
+// let arr = [20, 55.54, 'Nila', true];
+
+// console.log(arr);
+// arr.push('Tamil');
+// console.log(arr);
+// arr.push(100000000);
+// console.log(arr);
+// arr.unshift('Kevin');
+// arr.pop();
+// arr.pop();
+// arr.shift();
+// arr[2] = 'Erlalai';
+// console.log(arr);
+
+let arr = [20, 55.54, 'Nila', true];
+
+console.log(arr.indexOf('Tamil'));
+console.log(arr.indexOf('Nila'));
+console.log(arr.findIndex('Nila'));

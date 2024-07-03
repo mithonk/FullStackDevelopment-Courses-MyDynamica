@@ -91,11 +91,24 @@ console.log(student1);
 student1.fullName();
 */
 
+/*
 let student1 = {
   fname: 'Leo',
   lname: 'Das',
   age: 24,
   fullName: function () {
+    console.log(`My Fullname is ${this.fname} ${this.lname}`);
+  },
+};
+
+student1.fullName();
+*/
+
+let student1 = {
+  fname: 'Leo',
+  lname: 'Das',
+  age: 19,
+  fullName: () => {
     console.log(`My Fullname is ${this.fname} ${this.lname}`);
   },
 };

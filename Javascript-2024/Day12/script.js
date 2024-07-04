@@ -1,5 +1,5 @@
 // console.log('Test');
-
+/*
 function Student(fname, lname) {
   this.fname = fname;
   this.lname = lname;
@@ -11,6 +11,8 @@ function Student(fname, lname) {
 
 let student1 = new Student('Raja', 'Rani');
 
+console.log(student1);
+*/
 /*
 let student2 = new Student('John', 'Wick');
 let student3 = new Student('Kabil', 'Dev');
@@ -32,8 +34,27 @@ student1.display = function () {
 student1.display();
 */
 
+/*
 student1.display = () => {
   console.log(`Your Fullname is ${this.fname} ${this.lname}`);
 };
 
 student1.display();
+*/
+
+function Student(fname, lname) {
+  if (!new.target) {
+    return new Student(fname, lname);
+  }
+  this.fname = fname;
+  this.lname = lname;
+
+  this.getName = () => {
+    console.log(`Your Fullname is ${this.fname} ${this.lname}`);
+  };
+}
+
+let student1 = Student('Raja', 'Rani');
+
+console.log(student1);
+student1.getName();

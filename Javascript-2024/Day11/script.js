@@ -104,6 +104,11 @@ let student1 = {
 student1.fullName();
 */
 
+var fname = 'John';
+var lname = 'Wick';
+
+// console.log(this);
+
 let student1 = {
   fname: 'Leo',
   lname: 'Das',
@@ -111,6 +116,14 @@ let student1 = {
   fullName: () => {
     console.log(`My Fullname is ${this.fname} ${this.lname}`);
   },
+  fullName1: function () {
+    console.log(`My Fullname is ${this.fname} ${this.lname}`);
+  },
+  fullName2: function () {
+    console.log(`My Fullname is ${window.fname} ${window.lname}`);
+  },
 };
 
 student1.fullName();
+student1.fullName1();
+student1.fullName2();

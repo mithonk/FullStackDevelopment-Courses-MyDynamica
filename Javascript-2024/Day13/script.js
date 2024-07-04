@@ -63,3 +63,24 @@ student1.display = () => {
 
 student1.display();
 */
+
+class Student {
+  static NoOfStudent = 0;
+
+  constructor(fname, lname) {
+    this.firstName = fname;
+    this.lastName = lname;
+    Student.NoOfStudent += 1;
+  }
+
+  getFullName() {
+    console.log(`Your Fullname is ${this.firstName} ${this.lastName}`);
+  }
+}
+
+let student1 = new Student('Tamil', 'Nila');
+let student2 = new Student('Tamil', 'Aruvi');
+let student3 = new Student('Tamil', 'Mozhi');
+let student4 = new Student('Tamil', 'Kami');
+
+console.log(Student.NoOfStudent);

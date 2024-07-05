@@ -98,6 +98,11 @@ console.log(employee1.id);
 class Person {
   id = 1001;
   name = 'Leo';
+
+  display(msg) {
+    console.log(`${msg} ID : ${this.id}`);
+    console.log(`${msg} Name : ${this.name}`);
+  }
 }
 
 class Student extends Person {
@@ -112,11 +117,6 @@ class Student extends Person {
     this.marks2 = marks2;
     this.marks3 = marks3;
   }
-
-  display() {
-    console.log(`Student ID : ${this.id}`);
-    console.log(`Student Name : ${this.name}`);
-  }
 }
 
 class Employee extends Person {
@@ -129,15 +129,10 @@ class Employee extends Person {
   setBasicSalary(basicSalary) {
     this.basicSalary = basicSalary;
   }
-
-  display() {
-    console.log(`Employee ID : ${this.id}`);
-    console.log(`Employee Name : ${this.name}`);
-  }
 }
 
 let student1 = new Student(1001, 'John');
-student1.display();
+student1.display('Student');
 
 let employee1 = new Employee(1002, 'Wick');
-employee1.display();
+employee1.display('Employee');

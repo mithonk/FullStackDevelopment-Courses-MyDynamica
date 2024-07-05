@@ -74,7 +74,14 @@ class Student {
   }
 
   getFullName() {
+    // let x = 10;
     console.log(`Your Fullname is ${this.firstName} ${this.lastName}`);
+    // console.log(x);
+  }
+
+  static display() {
+    console.log(`Test`);
+    //console.log(x)
   }
 }
 
@@ -83,4 +90,8 @@ let student2 = new Student('Tamil', 'Aruvi');
 let student3 = new Student('Tamil', 'Mozhi');
 let student4 = new Student('Tamil', 'Kami');
 
-console.log(Student.NoOfStudent);
+// console.log(Student.NoOfStudent);
+// student3.display();
+// student1.getFullName();
+// student1.display();
+Student.display();

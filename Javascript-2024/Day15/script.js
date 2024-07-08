@@ -16,12 +16,18 @@ student1.getfName();
 */
 
 class Student {
+  #_fname = 'Yathursan';
+
   set fName(fname) {
-    this.fname = fname;
+    this.#_fname = 'Hi, ' + fname;
   }
   get fName() {
-    console.log(this.fname);
+    return 'My Name is : ' + this.#_fname;
   }
 }
 
 let student1 = new Student();
+// student1.fName = 'Mithursan';
+// student1.fName = 'Kabil';
+// student1._fname = 'John';
+console.log(student1.fName);

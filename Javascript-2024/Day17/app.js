@@ -97,10 +97,10 @@ class Employee {
 export { x, Student, Employee };
 */
 
-import { Student } from './student.js';
+//import { Student } from './student.js';
 let x = 10;
 
-export default function PrintName() {
+function PrintName() {
   console.log('My name is Mithursan Kalanantharasan');
 }
 
@@ -115,4 +115,4 @@ class Employee {
   }
 }
 
-export { x, Student, Employee };
+export { x, PrintName as default, Employee };

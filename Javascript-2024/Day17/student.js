@@ -1,4 +1,4 @@
-class Student {
+export default class Student {
   constructor(id, name) {
     this.id = id;
     this.name = name;
@@ -8,5 +8,3 @@ class Student {
     console.log(`Stuednt Name : ${this.name}`);
   }
 }
-
-export { Student };

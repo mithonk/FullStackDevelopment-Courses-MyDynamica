@@ -1,5 +1,5 @@
 {
-  "name": "day22",
+  "name": "hw1",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,6 @@
     "dev": "nodemon --exec \"cls && node\" ./src/index.js -q"
   },
   "author": "",
-  "type": "module",
   "license": "ISC",
   "dependencies": {
     "nodemon": "^3.1.4"

@@ -1,0 +1,16 @@
+{
+  "name": "hw1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec \"cls && node\" ./src/index.js -q"
+  },
+  "author": "",
+  "type": "module",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "nodemon": "^3.1.4"
+  }
+}

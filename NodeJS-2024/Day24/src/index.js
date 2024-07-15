@@ -2,6 +2,7 @@
 
 const fs = require('fs');
 const axios = require('axios');
+const { error } = require('console');
 
 const url = 'https://jsonplaceholder.typicode.com/users/';
 
@@ -44,7 +45,8 @@ function calculate() {
 
 async function getName() {
   console.log('My Name');
-  return Promise.resolve('success');
+  // return Promise.resolve('success');
+  return Promise.reject('Error');
 }
 
 /*
@@ -82,8 +84,14 @@ calculate();
 */
 
 async function display() {
-  let data = await getName();
-  return Promise.resolve(data);
+  try {
+    let data = await getName();
+
+    return Promise.resolve(data);
+  } catch (error) {
+    // console.log(error);
+    return Promise.reject('This is My Error');
+  }
 }
 
 // display().then(() => {
@@ -93,7 +101,11 @@ async function display() {
 // display();
 // calculate();
 
-display().then((data) => {
-  console.log(data);
-  calculate();
-});
+display()
+  .then((data) => {
+    // console.log(data);
+    calculate();
+  })
+  .catch((error) => {
+    console.log(error);
+  });
